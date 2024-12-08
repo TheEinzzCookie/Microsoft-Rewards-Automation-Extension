@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Microsoft Rewards Automator",
+  "version": "1.0",
+  "permissions": [
+      "activeTab",
+      "scripting"
+  ],
+  "host_permissions": [
+      "https://rewards.bing.com/*",
+      "https://www.bing.com/*" 
+  ],
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "background": {
+      "service_worker": "background.js"
+  }
+}

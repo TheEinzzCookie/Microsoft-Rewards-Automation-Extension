@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Rewards Automator</title>
+    <script src="popup.js" defer></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 200px;  /* Fixed width */
+            height: 300px; /* Fixed height */
+            padding: 10px; /* Reduced padding */
+            background-color: #ffffff;
+            color: #333;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden; /* Prevent overflow of content */
+        }
+        h1 {
+            font-size: 22px; /* Slightly smaller font size */
+            margin-bottom: 10px; /* Reduced margin */
+            text-align: center;
+            color: #0078d4;
+        }
+        button {
+            width: 100%;
+            margin: 5px 0; /* Reduced margin */
+            padding: 12px; /* Slightly smaller padding */
+            font-size: 16px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        .control-container {
+            display: flex;
+            align-items: center;
+            margin-top: 5px; /* Space above the control container */
+        }
+        select {
+            margin-left: 5px; /* Space between button and dropdown */
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rewards Automator</h1>
+    <button id="go-to-site">Go to Bing</button>
+    <button id="close-tabs">Close Recent Tabs</button>
+</body>
+</html>
